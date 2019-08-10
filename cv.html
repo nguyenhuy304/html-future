@@ -22,7 +22,7 @@
         }
         .main{
             display: grid;
-            grid-template-columns: 400px 800px;
+            grid-template-columns: 300px 800px;
         }
         .left{
             background: lightgrey;
@@ -35,7 +35,7 @@
         }
         .btmleft{
             text-align: center;
-            border-top: solid blue 3px;
+            border-top: solid white 3px;
             padding-top: 100px;
         }
         .rightcontent
@@ -43,13 +43,13 @@
             display:grid;
             grid-template-columns: 800px;
             text-align: left;
-            font-family: Corbel;
-            font-size: 40px;
+            background: lightgrey;
         }
         .infor{
             display: grid;
-            grid-template-columns: 200px 600px;
-            border: solid grey;
+            grid-template-columns: 300px 500px;
+            border: solid lightgrey 10px;
+            background: white;
         }
         .name{
             font-family: Gabriola;
@@ -62,20 +62,28 @@
         }
         .CV{
             background-color: lightgrey;
-            font-size: 70px;
+            color: #00aff0;
+            font-size: 80px;
             text-align: center;
             font-family: ".Vn3DH";
-            padding: 20px;
+            padding-bottom: 50px;
+            padding-top: 50px;
         }
         .item1{
-            padding-top: 100px;
+            display: grid;
+            grid-template-rows: auto auto;
+            border-left: solid lightgrey;
             text-align: center;
-            font-family: "Times New Roman";
-            font-size: 40px;
+            font-size: 30px;
+            padding:15px;
+            font-family: Vijaya;
         }
         .item2{
+            display: grid;
+            grid-template-rows: auto auto;
             border-left: solid lightgrey;
             text-align: left;
+            font-size: 30px;
             padding:15px;
             font-family: Vijaya;
         }
@@ -120,21 +128,36 @@
         }
       li:hover{
             transform: scale(1.2);
-            transition: all ease-in-out 0.5s;
+            transition: all ease-in-out 1s;
+        }
+        .sectionTitle{
+            text-align: center;
+            font-family: Arial;
+            font-size: 40px;
+        }
+        .aboutme{
+            text-align: center;
+            font-family: Andalus;
+            background: white;
+            font-size: 30px;
+            padding: 20px;
+            border: solid lightgrey 10px;
+        }
+        p{
+            padding: 10px;
+            margin:10px
         }
         .footer{
+            height: 100px;
             background: lightgrey;
-            text-align: center;
-            font-family: Gabriola;
-            font-size: 30px;
         }
-
-
     </style>
 </head>
 <body>
 <div id="page-wrap">
+    <div class="CV">PROFILE</div>
     <div class="main">
+
         <div class="left">
             <div class="topleft">
                 <img src="https://cdn1.vectorstock.com/i/1000x1000/71/25/lightning-flash-on-transparent-background-thunder-vector-19867125.jpg" alt="Huy">
@@ -149,7 +172,7 @@
                 </i>
                 <br>
                 <i class="fa fa-facebook">
-                    <a href="https://www.facebook.com/" target="_blank">SKYPE.COM</a>
+                    <a href="https://www.facebook.com/" target="_blank">FACEBOOK.COM</a>
                 </i>
         </div>
         </div>
@@ -169,25 +192,33 @@
             </div>
         </div>
         <div class="rightcontent">
-            <div class="CV">PROFILE</div>
+
+            <div class="sectionTitle">ABOUT ME</div>
+            <div class="aboutme"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
+            <div class="sectionTitle">EDUCATION</div>
             <div class="infor">
-                <div class="item1">infomation</div>
-                <div class="item2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
+                <div class="item1">
+                    <p>2010</p>
+                    <p>2016</p>
+               </div>
+                <div class="item2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor ex exercitationem iure laboriosam mollitia nemo nisi velit. Earum iste, magni nam provident quia quibusdam quod repudiandae soluta veritatis voluptatibus.</p>
             </div>
-            <div class="infor">
-                <div class="item1">infomation</div>
-                <div class="item2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
             </div>
+            <div class="sectionTitle">EXPERIENCE</div>
             <div class="infor">
-                <div class="item1">infomation</div>
+                <div class="item1">ABC</div>
                 <div class="item2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
             </div>
-            <div class="footer">abcder
-
-                </div>
+            <div class="sectionTitle">
+            </div>
             </div>
         </div>
+    <div class="footer">
+
     </div>
+</div>
 </body>
 </html>
