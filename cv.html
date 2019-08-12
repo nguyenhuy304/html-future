@@ -12,6 +12,15 @@
         HTML {
             background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/87/52/8957d251b0d0605.jpg");
         }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
         #page-wrap{
             width: fit-content;
             height: fit-content;
@@ -19,24 +28,27 @@
             background: white;
             border: solid black;
             box-shadow: 5px 5px 20px 5px;
+
         }
         .main{
             display: grid;
             grid-template-columns: 300px 800px;
+            -webkit-animation-name: fade-in;
+            -webkit-animation-duration: 5s;
         }
         .left{
             background: lightgrey;
             display: grid;
-            grid-template-rows: 600px auto;
+            grid-template-rows: 700px auto;
         }
         .topleft{
             text-align: center;
-           padding-top: 100px;
+            padding-top: 100px;
         }
         .btmleft{
             text-align: center;
-            border-top: solid white 3px;
-            padding-top: 100px;
+            border-top: solid white;
+            padding-top: 50px;
         }
         .rightcontent
         {
@@ -45,7 +57,7 @@
             text-align: left;
             background: lightgrey;
         }
-        .infor{
+        .left-left{
             display: grid;
             grid-template-columns: 300px 500px;
             border: solid lightgrey 10px;
@@ -55,10 +67,16 @@
             font-family: Gabriola;
             padding-top: 30px;
             font-size: 60px;
+            line-height: 35px;
+        }
+        .undername{
+            font-family: Vijaya;
+            font-size: 30px;
         }
         .contact{
             font-family: Gabriola;
             font-size: 20px;
+            padding-top: 50px;
         }
         .CV{
             background-color: lightgrey;
@@ -68,6 +86,8 @@
             font-family: ".Vn3DH";
             padding-bottom: 50px;
             padding-top: 50px;
+            -webkit-animation-name: fade-in;
+            -webkit-animation-duration: 3s;
         }
         .item1{
             display: grid;
@@ -92,7 +112,6 @@
             font-family: Gabriola;
             font-size: 60px;
         }
-
         img{
             height: 250px;
             border-radius: 50%;
@@ -102,14 +121,14 @@
             transform: scale(1.3);
             transition: all ease-in-out 0.5s;
         }
-        .fa-youtube,.fa-skype,.fa-facebook{
-            font-size: 20px;
+        .fa-youtube,.fa-skype,.fa-facebook,.mail{
+            font-size: 30px;
             float:left;
             padding-left: 20px;
         }
         a{
             color: blue;
-            font-family: Gabriola;
+            font-family: Aharoni;
             font-size: 20px;
         }
         li{
@@ -126,7 +145,7 @@
             box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
             background: blue;
         }
-      li:hover{
+        li:hover{
             transform: scale(1.2);
             transition: all ease-in-out 1s;
         }
@@ -151,6 +170,8 @@
             height: 100px;
             background: lightgrey;
         }
+
+
     </style>
 </head>
 <body>
@@ -161,21 +182,27 @@
         <div class="left">
             <div class="topleft">
                 <img src="https://cdn1.vectorstock.com/i/1000x1000/71/25/lightning-flash-on-transparent-background-thunder-vector-19867125.jpg" alt="Huy">
-                <div class="name">HUY NGUYỄN</div>
+                <div class="name">HUY NGUYỄN
+                <div class="undername">Web Developer</div>
+                </div>
                 <div class="contact">
-                <i class="fa fa-youtube">
-                    <a href="https://www.youtube.com/?gl=VN" target="_blank">YOUTUBE.COM</a>
-                </i>
-                <br>
-                <i class="fa fa-skype">
-                    <a href="https://www.skype.com/en/" target="_blank">SKYPE.COM</a>
-                </i>
-                <br>
-                <i class="fa fa-facebook">
-                    <a href="https://www.facebook.com/" target="_blank">FACEBOOK.COM</a>
-                </i>
-        </div>
-        </div>
+                    <i class="mail">
+                        <i style="padding-right: 3px">&#9993;</i><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">nguyenhuy304@gmail.com</a>
+                    </i>
+                    <br>
+                    <i class="fa fa-youtube">
+                        <a href="https://www.youtube.com/?gl=VN" target="_blank">YOUTUBE.COM</a>
+                    </i>
+                    <br>
+                    <i class="fa fa-skype">
+                        <a href="https://www.skype.com/en/" target="_blank">SKYPE.COM</a>
+                    </i>
+                    <br>
+                    <i class="fa fa-facebook">
+                        <a href="https://www.facebook.com/" target="_blank">FACEBOOK.COM</a>
+                    </i>
+                </div>
+            </div>
             <div class="btmleft">
                 <div class="keySkills">SKILLS</div>
                 <UL>
@@ -196,26 +223,26 @@
             <div class="sectionTitle">ABOUT ME</div>
             <div class="aboutme"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
             <div class="sectionTitle">EDUCATION</div>
-            <div class="infor">
+            <div class="left-left">
                 <div class="item1">
                     <p>2010</p>
                     <p>2016</p>
-               </div>
+                </div>
                 <div class="item2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor ex exercitationem iure laboriosam mollitia nemo nisi velit. Earum iste, magni nam provident quia quibusdam quod repudiandae soluta veritatis voluptatibus.</p>
-            </div>
+                </div>
             </div>
             <div class="sectionTitle">EXPERIENCE</div>
-            <div class="infor">
+            <div class="left-left">
                 <div class="item1">ABC</div>
                 <div class="item2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
             </div>
             <div class="sectionTitle">
             </div>
-            </div>
         </div>
+    </div>
     <div class="footer">
 
     </div>
