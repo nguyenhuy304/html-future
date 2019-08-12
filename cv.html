@@ -4,13 +4,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="js/jquery.js" type="text/javascript"></script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <style>
         HTML {
             background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/87/52/8957d251b0d0605.jpg");
+            -webkit-background-size: cover;
         }
 
         @keyframes fade-in {
@@ -21,6 +21,18 @@
                 opacity: 1;
             }
         }
+        @keyframes fade-in-2{
+            0% {
+                opacity: 0;
+            }
+            80%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+
+        }
         #page-wrap{
             width: fit-content;
             height: fit-content;
@@ -28,13 +40,14 @@
             background: white;
             border: solid black;
             box-shadow: 5px 5px 20px 5px;
-
+            -webkit-animation-name: fade-in;
+            -webkit-animation-duration: 3s;
         }
         .main{
             display: grid;
             grid-template-columns: 300px 800px;
             -webkit-animation-name: fade-in;
-            -webkit-animation-duration: 5s;
+            -webkit-animation-duration: 3s;
         }
         .left{
             background: lightgrey;
@@ -57,11 +70,13 @@
             text-align: left;
             background: lightgrey;
         }
-        .left-left{
+        .right-btm{
             display: grid;
             grid-template-columns: 300px 500px;
             border: solid lightgrey 10px;
             background: white;
+            -webkit-animation-name: fade-in-2;
+            -webkit-animation-duration: 3s;
         }
         .name{
             font-family: Gabriola;
@@ -153,6 +168,8 @@
             text-align: center;
             font-family: Arial;
             font-size: 40px;
+            -webkit-animation-name: fade-in;
+            -webkit-animation-duration: 3s;
         }
         .aboutme{
             text-align: center;
@@ -161,6 +178,8 @@
             font-size: 30px;
             padding: 20px;
             border: solid lightgrey 10px;
+            -webkit-animation-name: fade-in-2;
+            -webkit-animation-duration: 3s;
         }
         p{
             padding: 10px;
@@ -223,7 +242,7 @@
             <div class="sectionTitle">ABOUT ME</div>
             <div class="aboutme"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
             <div class="sectionTitle">EDUCATION</div>
-            <div class="left-left">
+            <div class="right-btm">
                 <div class="item1">
                     <p>2010</p>
                     <p>2016</p>
@@ -234,7 +253,7 @@
                 </div>
             </div>
             <div class="sectionTitle">EXPERIENCE</div>
-            <div class="left-left">
+            <div class="right-btm">
                 <div class="item1">ABC</div>
                 <div class="item2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
