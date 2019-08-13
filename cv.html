@@ -9,7 +9,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <style>
         HTML {
-            background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/87/52/8957d251b0d0605.jpg");
+            background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
             -webkit-background-size: cover;
         }
 
@@ -76,7 +76,7 @@
             border: solid lightgrey 10px;
             background: white;
             -webkit-animation-name: fade-in-2;
-            -webkit-animation-duration: 3s;
+            -webkit-animation-duration: 2s;
         }
         .name{
             font-family: Gabriola;
@@ -146,9 +146,6 @@
             font-family: Aharoni;
             font-size: 20px;
         }
-        li{
-            padding-top: 5px;
-        }
         progress {
             width: 200px;
             height: 14px;
@@ -159,10 +156,6 @@
             border-radius: 50px;
             box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
             background: blue;
-        }
-        li:hover{
-            transform: scale(1.2);
-            transition: all ease-in-out 1s;
         }
         .sectionTitle{
             text-align: center;
@@ -179,7 +172,7 @@
             padding: 20px;
             border: solid lightgrey 10px;
             -webkit-animation-name: fade-in-2;
-            -webkit-animation-duration: 3s;
+            -webkit-animation-duration: 2s;
         }
         p{
             padding: 10px;
@@ -188,6 +181,40 @@
         .footer{
             height: 100px;
             background: lightgrey;
+            text-align: center;
+            font-size: 50px;
+        }
+        .topmenu li{
+            width: 300px;
+            height: 50px;
+            -webkit-animation-name: fade-in-2;
+            -webkit-animation-duration: 2s;
+        }
+        .topmenu ul {
+            position: fixed;
+            right: 180px;
+            list-style-type: none;
+            text-align: center;
+            -webkit-animation-name: fade-in-2;
+            -webkit-animation-duration: 3s;
+        }
+        .topmenu a{
+            color: grey;
+        }
+        .sticky{
+            position: fixed;
+            right:180px;
+            top:0px;
+            list-style-type: none;
+            text-align: center;
+        }
+        ul{
+
+            margin: 0;
+        }
+        li{
+            border-left: 20px;
+            border-right: 20px;
         }
 
 
@@ -196,13 +223,35 @@
 <body>
 <div id="page-wrap">
     <div class="CV">PROFILE</div>
+    <div class="topmenu" id="myHeader">
+        <ul>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Interest</a></li>
+        </ul>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var topmenu = document.getElementById("myHeader");
+            var sticky = topmenu.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    topmenu.classList.add("sticky");
+                } else {
+                    topmenu.classList.remove("sticky");
+                }
+            }
+        </script>
+    </div>
     <div class="main">
 
         <div class="left">
             <div class="topleft">
-                <img src="https://cdn1.vectorstock.com/i/1000x1000/71/25/lightning-flash-on-transparent-background-thunder-vector-19867125.jpg" alt="Huy">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/71/25/lightning-flash-on-transparent-background-thunder-vector-19867125.jpg" alt="Huy" onclick="alert('HELLO EVERYONE')">
                 <div class="name">HUY NGUYỄN
-                <div class="undername">Web Developer</div>
+                    <div class="undername">Web Developer</div>
                 </div>
                 <div class="contact">
                     <i class="mail">
@@ -258,11 +307,11 @@
                 <div class="item2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
             </div>
-            <div class="sectionTitle">
-            </div>
+            <div class="sectionTitle">INTEREST</div>
+            <div class="aboutme"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum laboriosam nulla recusandae voluptatum! Cumque distinctio error, nam odit optio voluptates? Aut doloribus laboriosam perferendis placeat quae recusandae reprehenderit unde?</div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer">BACK ON TOP
 
     </div>
 </div>
